@@ -1,0 +1,46 @@
+
+<script type="text/x-red" data-template-name="NRDS_RED">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>    
+</script>
+<script type="text/x-red" data-help-name="NRDS_RED">
+    <p>The node use send the port and the path of editor of the node red.</p>
+
+  
+    <h3>Inputs</h3>
+    Any kind of msg 
+    
+  
+    <h3>Outputs</h3>
+    The ouptut is <code>
+        msg ={
+                httpAdminRoot : "The httpAdminRoot",
+                uiPort : "The uiPort",
+            	.... :"the rest of the incoming msg"
+        }
+    </code>
+   
+    
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('NRDS_RED',{
+        category: 'function',
+        color:"#FF002A",//"#87D8CF",
+        defaults: {
+            name: {value:""}
+        },
+        align:"left",
+        inputs:1,
+        outputs:1,
+        icon: "font-awesome/fa-sign-out",
+        label: function() {
+            return this.name||'NRDS_RED';
+        },
+        labelStyle: function() {
+            return this.name?"node_label_italic":"";
+        }
+    });
+</script>
