@@ -8,6 +8,7 @@ module.exports = function(RED) {
             //msg.payload = {}
             msg.uiPort = RED.settings.uiPort
             msg.httpAdminRoot = RED.settings.httpAdminRoot
+            msg.userDir = RED.settings.userDir
             node.send(msg)
         });
     }
