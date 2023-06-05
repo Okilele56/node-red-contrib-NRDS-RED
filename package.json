@@ -1,21 +1,20 @@
 {
-    "name": "node-red-contrib-currentflow",
-    "version": "0.0.1",
+    "name": "node-red-contrib-nrds-red",
+    "version": "0.0.3",
     "description": "",
-    "dependencies": {
-        "request": "2.88.0"
-    },
+    "dependencies": {},
     "repository": {},
     "keywords": [
         "node-red"
     ],
     "node-red": {
+        "version": ">=1.0.0",
         "nodes": {
-            "currentflow": "currentflow.js"
+            "node-red-nrds-red": "NRDS-RED.js"
         }
     },
     "author": {
-        "name": "Frederic Chanson"
+        "name": "Valentin Dessert"
     },
     "license": "",
     "bugs": {},
